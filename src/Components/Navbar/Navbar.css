@@ -1,0 +1,139 @@
+.nav_container {
+  background-color: #FAFAFA;
+  border-radius: 20px;
+  margin: 20px 40px 0 40px;
+  overflow: hidden;
+}
+
+nav {
+  height: 95px;
+  width: 100%;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hamburger {
+  height: 20px;
+  width: auto;
+  display: none;
+}
+
+.category {
+  display: flex;
+  align-items: center;
+}
+
+.new_drops {
+  list-style: none;
+  margin-right: 20px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.new_drops > a {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  color: #232321;
+}
+
+.men_category {
+  margin-right: 20px;
+  white-space: nowrap;
+}
+
+.men_category > a {   
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  color: #232321;
+}
+
+.men_category > img {
+  margin: 0 5px;
+}
+
+.women_category {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  color: #232321;
+  /* margin-right: 30px; */
+  white-space: nowrap;
+}
+
+.women_category > a {   
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  color: #232321;
+}
+
+.women_category > img {
+  margin: 0 5px;
+}
+
+.action_container {
+  display: flex;
+  align-items: center;
+}
+
+.action_container .search {
+  margin-left: 30px;
+  height: 20px;
+  width: 20px;
+}
+
+.action_container .profile {
+  margin-left: 100px;
+  height: 20px;
+  width: 20px;
+}
+
+.circle {
+  margin-left: 30px;
+  background-color: #FFA52F;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  color: #232321;
+}
+
+@media (max-width: 850px) {
+  nav {
+    padding: 0 15px;
+  }
+  .hamburger {
+    display: block;
+    margin-right: 100px;
+  }
+  .category {
+    display: none;
+  }
+  .action_container .profile {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 580px) {
+  .nav_container {
+    margin: 40px 15px 0 15px;
+  }
+  .hamburger {
+    margin-right: 0;
+  }
+  .profile {
+    margin-left: 0px;
+  }
+  .search {
+    display: none;
+  }
+  .circle {
+    margin-left: 15px;
+    height: 30px;
+    width: 30px;
+  }
+}

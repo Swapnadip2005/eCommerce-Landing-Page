@@ -1,0 +1,127 @@
+.frame3_container {
+  background-color: #232321;
+  font-family: "Rubik", sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+
+.frame3_header {
+  padding: 50px 40px 0 40px;
+  margin-bottom: 30px;
+}
+
+.frame3_heading {
+  /* background-color: aqua; */
+  color: #fafafa;
+  font-size: 60px;
+}
+
+.frame3_category {
+  /* background-color: aquamarine; */
+  border-radius: 70px 0 0 0;
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fafafa;
+  overflow: hidden;
+}
+
+.shoe1 {
+  width: 50%;
+  background-color: #ECEEF0;
+  background-image: url(../../assets/Frame3/frame3_shoe1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.shoe2 {
+  width: 50%;
+  background-color: #F6F6F6;
+  background-image: url(../../assets/Frame3/frame3_shoe2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.shoe1_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 450px 40px 40px 40px;
+}
+
+.shoe1_heading {
+  width: 20%;
+  color: #232321;
+  font-weight: 600;
+}
+
+.shoe2_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 450px 40px 40px 40px;
+}
+
+.shoe2_heading {
+  width: 20%;
+  color: #232321;
+  font-weight: 600;
+}
+
+.shoe1_content > img, .shoe2_content > img {
+  align-self: flex-end;
+}
+
+@media (max-width: 768px) {
+  .frame3_category {
+    flex-direction: column;
+  }
+  .shoe1, .shoe2 {
+    width: 100%;
+  }
+  .shoe1_content, .shoe2_content {
+    margin: 350px 40px 20px 40px;
+  }
+  .frame3_category {
+    margin: 0 20px 0 20px;
+  }
+}
+
+@media (max-width: 580px) {
+  .frame3_header {
+    padding: 50px 15px 0 15px;
+  }
+  .frame3_heading {
+    font-size: 50px;
+  }
+  .frame3_category {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  .shoe1_content, .shoe2_content {
+    margin: 250px 15px 20px 15px;
+  }
+  .frame3_heading {
+    font-size: 40px;
+  }
+  .shoe1_heading, .shoe2_heading {
+    font-size: 20px;
+  }
+  .shoe1_content > img, .shoe2_content > img {
+    width: 30px;
+  }
+}
+
+@media (max-width: 375px) {
+  .frame3_heading {
+    font-size: 30px;
+  }
+}
